@@ -1,0 +1,2 @@
+# Budgetter
+ Ruby Budget App
