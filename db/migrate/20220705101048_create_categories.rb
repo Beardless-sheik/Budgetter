@@ -3,7 +3,7 @@ class CreateCategories < ActiveRecord::Migration[7.0]
     create_table :categories do |t|
       t.string :Name
       t.string :Icon
-      t.references :user_id, null: false
+      t.bigint :user_id, null: false
 
       t.timestamps
     end

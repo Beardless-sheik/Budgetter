@@ -3,8 +3,8 @@ class CreatePayments < ActiveRecord::Migration[7.0]
     create_table :payments do |t|
       t.string :Name
       t.string :Amount
-      t.references :category_id, null: false
-      t.references :user_id, null: false
+      t.bigint :category_id, null: false
+      t.bigint :user_id, null: false
       t.timestamps
     end
 
@@ -12,4 +12,3 @@ class CreatePayments < ActiveRecord::Migration[7.0]
     add_foreign_key :payments, :categories, column: :category_id
     end
   end
-end
