@@ -24,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_05_101102) do
 
   create_table "payments", force: :cascade do |t|
     t.string "Name"
-    t.string "Amount"
+    t.decimal "Amount"
     t.bigint "category_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
