@@ -45,8 +45,13 @@ gem "bootsnap", require: false
 # Use Devise for Authentication  
 gem 'devise'
 
+# Add jQuerry to dependancies for bootsrap
+gem "jquery-rails"
+gem "turbolinks"
+
 # Add Bootstrap CSS framework
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap', '~> 5.1.3'
+# gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
 # Use Sass to process CSS

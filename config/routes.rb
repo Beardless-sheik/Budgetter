@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     root to: "categories#index"
   
     resources :categories, only: [:index, :new, :create] do
-      resources :transactions, only: [:index, :new, :create] 
+      resources :payments, only: [:index, :new, :create] 
     end
   end
   
