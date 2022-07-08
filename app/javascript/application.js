@@ -6,5 +6,4 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-import "@hotwired/turbo-rails"
-import "controllers"
+import 'bootstrap'
