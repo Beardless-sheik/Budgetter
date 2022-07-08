@@ -1,3 +1,5 @@
+
+<% if @categories_available %>
 <%= form_with url: category_payments_path, class: 'sign-up-form' do |f| %>
   <div class="sign-up-field">
     <%= f.text_field :Name, { class: "sign-up-input", autofocus: true, placeholder: "Payment Name"} %>
@@ -7,8 +9,15 @@
     <%= f.number_field :Amount, autofocus: true, placeholder: "Amount", class: "sign-up-input" %>
   </div>
 
+  <div class="sign-up-field">
+    <%= f.select(:category_id, @categories_available.map {|category| [category.Name, category.id]}, class: "sign-up-input" ) %>
+  </div>
+
   <div class="create-inventory-button-container">
     <%= f.submit "Create Payment", class: "create-inventory-button-link m-auto" %>
   </div>
+<% end %>
 
+<% else %>
+  <p> No Categories Available, Please Add A Category To Add A Payment </p>
 <% end %>
