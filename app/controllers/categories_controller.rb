@@ -1,9 +1,12 @@
 class CategoriesController < ApplicationController
   def index
+    @header_description = 'CATEGORIES'
     @categories = Category.all
   end
 
-  def new; end
+  def new
+    @header_description = 'CATEGORIES'
+  end
 
   def create
     new_category = Category.new(category_params)
