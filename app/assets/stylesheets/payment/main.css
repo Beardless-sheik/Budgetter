@@ -11,7 +11,12 @@
 
 .payment-grid-sub-container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 2fr 5fr 1fr;
+}
+
+.payment-category-description-text {
+  margin-left: 4rem;
+  align-self: center;
 }
 
 .payment-description-text {
@@ -29,5 +34,21 @@
 }
 
 .payment-image-logo {
+  width: 5rem;
+  height: 5rem;
   justify-self: center;
+}
+
+.category-select-input {
+  padding: 2px 20px;
+  border: 1px solid #3778c2;
+  border-radius: 15px;
+  width: 60%;
+  height: 30px;
+  margin: 10px 10px;
+}
+
+.category-label {
+  margin: 15px 5px;
+  color: black;
 }

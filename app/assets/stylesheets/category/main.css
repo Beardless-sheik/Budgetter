@@ -49,11 +49,12 @@
 }
 
 .category-image-logo {
+  width: 6rem;
+  height: 6rem;
   justify-self: center;
 }
 
 .add-category-button-container {
-  height: 70px;
   margin-top: auto;
   background-color: #5fb523;
 }
@@ -96,6 +97,26 @@
   padding: 10px;
   border-radius: 15px;
   display: block;
+}
+
+.category-to-payment-link {
+  outline: none;
+  text-decoration: none;
+  color: #92a7be;
+  padding: 2px 1px 0;
+}
+
+.category-to-payment-link:link {
+  color: #101416;
+}
+
+.category-to-payment-link:visited {
+  color: rgb(66, 98, 134);
+}
+
+.category-to-payment-link:active {
+  background: #cfdae6;
+  color: #cdfeaa;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,11 +1,18 @@
-<div class="payment-grid-container">
-  <div class="payment-grid-sub-container">
-    <img src="https://img.icons8.com/material-outlined/96/1A1A1A/no-image.png" class="payment-image-logo"/>
-    <p class="category-description-text"> CATEGORY DESCRIPTION </p>
-  </div>
-  <p class="payment-description-text"> PAYMENT DESCRIPTION </p>
-  <p class="payment-amount-total"> Total Amount: ZMW 30.00 </p>
-</div>
+<%if @payments.any? %>
+  <% @payments.each do |payment| %>
+    <div class="payment-grid-container">
+      <div class="payment-grid-sub-container">
+        <img src=<%= @category.Icon %> class="payment-image-logo"/>
+        <p class="payment-category-description-text"> <%= @category.Name %> </p>
+        <%= button_to(image_tag("https://img.icons8.com/fluency/144/000000/filled-trash.png", class: "delete-resource-button"), "/categories/#{@category.id}/payments/#{payment.id}", method: :delete, class: "delete-resource-button") %>
+      </div>
+      <p class="payment-description-text"> <%= payment.Name %> </p>
+      <p class="payment-amount-total"> Total Amount: <%= payment.Amount %> </p>
+    </div>
+  <% end %>
+<% else %>
+  <p class="payment-description-text"> No Payments Available for This Category </p>
+<% end %>
 
 <div class="add-category-button-container">
   <button class="add-category-button">

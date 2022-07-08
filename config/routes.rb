@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     root to: 'categories#index'
 
     resources :categories, only: %i[index new create] do
-      resources :payments, only: %i[index new create]
+      resources :payments, only: %i[index new create destroy]
     end
   end
 
