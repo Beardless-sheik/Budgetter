@@ -1,11 +1,15 @@
-<% @categories.each do |category| %>
-  <a href=<%= "	/categories/#{category.id}/payments" %> class="category-to-payment-link">
-  <div class="category-grid-container">
-    <img src=<%= category.Icon %> class="category-image-logo"/>
-    <p class="category-description-text"> <%= category.Name %> </p>
-    <p class="category-amount-total"> <%= category.check_payment_total %> </p>
-  </div>
-  </a>
+<% if @categories.any? %>
+  <% @categories.each do |category| %>
+    <a href=<%= "	/categories/#{category.id}/payments" %> class="category-to-payment-link">
+    <div class="category-grid-container">
+      <img src=<%= category.Icon %> class="category-image-logo"/>
+      <p class="category-description-text"> <%= category.Name %> </p>
+      <p class="category-amount-total"> <%= category.check_payment_total %> </p>
+    </div>
+    </a>
+  <% end %>
+<% else %>
+    <p class="category-description-text"> No Categories have been added yet! </p>
 <% end %>
 
 <div class="add-category-button-container">
