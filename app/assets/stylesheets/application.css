@@ -33,3 +33,8 @@
 .alert {
   text-align: center;
 }
+
+.splash-header-text {
+  text-align: center;
+  font-size: 3rem;
+}

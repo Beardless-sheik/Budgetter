@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   Rails.application.routes.draw do
     devise_for :users
-    root to: 'categories#index'
+    root to: 'categories#splash'
 
-    resources :categories, only: %i[index new create] do
+    resources :categories, only: %i[index new create splash] do
       resources :payments, only: %i[index new create destroy]
     end
   end
