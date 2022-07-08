@@ -4,6 +4,7 @@
       <div class="payment-grid-sub-container">
         <img src=<%= @category.Icon %> class="payment-image-logo"/>
         <p class="payment-category-description-text"> <%= @category.Name %> </p>
+        <%= button_to(image_tag("https://img.icons8.com/fluency/144/000000/filled-trash.png", class: "delete-resource-button"), "/categories/#{@category.id}/payments/#{payment.id}", method: :delete, class: "delete-resource-button") %>
       </div>
       <p class="payment-description-text"> <%= payment.Name %> </p>
       <p class="payment-amount-total"> Total Amount: <%= payment.Amount %> </p>

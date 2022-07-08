@@ -11,7 +11,7 @@
 
 .payment-grid-sub-container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 2fr 5fr 1fr;
 }
 
 .payment-category-description-text {
@@ -34,6 +34,8 @@
 }
 
 .payment-image-logo {
+  width: 5rem;
+  height: 5rem;
   justify-self: center;
 }
 
