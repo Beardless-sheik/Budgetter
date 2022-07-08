@@ -1,25 +1,66 @@
-# Budgetter
- Ruby Budget App
+# Recipe App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Budgetter app keeps track of all your finances per category the user creates. It will allow you to save your payments history and keep track of what you have spent in total!
 
-Things you may want to cover:
+# Built With
+ - Ruby on Rails
+ - Bootstrap 5
 
-* Ruby version
+# Live Demo
+  - [Budgetter Live Demo]()
 
-* System dependencies
+# Additional Tools
+  1. Rubocop
+  2. Stylelint
+  3. Ruby Gems
 
-* Configuration
+# Getting Started
+To get local copy of the project and run these instructions in your terminal. 
 
-* Database creation
+1. ``git clone https://github.com/Beardless-sheik/Budgetter.git``
+2. ``cd budgetter``
+3. ``gem install bundler``
+4. ``bundle install``
+5. ``rails s``
 
-* Database initialization
+## Database Setup
+Setup db
 
-* How to run the test suite
+1. ``su - postgres``
+2. ``psql``
+3. ``rails db:create``
+4. ``rails db:migrate``
+5. ``rails db:seed``
 
-* Services (job queues, cache servers, search engines, etc.)
+# Tests
 
-* Deployment instructions
+1. ``rspec spec --format d`` (This runs the rspec Test suite)
+2. ``rubocop`` (Checks the code-style for linting errors)
 
-* ...
+## Authors
+
+👤 **Alick Nyirenda**
+
+- GitHub: [@AlickNyirenda](https://github.com/Beardless-sheik)
+- Twitter: [@AlickNyirenda](https://twitter.com/AlickNyirenda)
+- LinkedIn: [@AlickNyirenda](https://www.linkedin.com/in/AlickNyirenda/)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/bushmusi/recipe-app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Inspiration for the design: [Gregoire Vella's Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
