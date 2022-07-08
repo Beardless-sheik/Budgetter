@@ -1,0 +1,14 @@
+<%= form_with url: category_payments_path, class: 'sign-up-form' do |f| %>
+  <div class="sign-up-field">
+    <%= f.text_field :Name, { class: "sign-up-input", autofocus: true, placeholder: "Payment Name"} %>
+  </div>
+
+  <div class="sign-up-field">
+    <%= f.number_field :Amount, autofocus: true, placeholder: "Amount", class: "sign-up-input" %>
+  </div>
+
+  <div class="create-inventory-button-container">
+    <%= f.submit "Create Payment", class: "create-inventory-button-link m-auto" %>
+  </div>
+
+<% end %>
