@@ -1,4 +1,4 @@
-<% if @categories.any %>
+<% if @categories.any? %>
   <% @categories.each do |category| %>
     <a href=<%= "	/categories/#{category.id}/payments" %> class="category-to-payment-link">
     <div class="category-grid-container">
