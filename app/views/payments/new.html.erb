@@ -6,11 +6,12 @@
   </div>
 
   <div class="sign-up-field">
-    <%= f.number_field :Amount, autofocus: true, placeholder: "Amount", class: "sign-up-input" %>
+    <%= f.number_field :Amount, step: 0.01, placeholder: "Amount", class: "sign-up-input" %>
   </div>
 
   <div class="sign-up-field">
-    <%= f.select(:category_id, @categories_available.map {|category| [category.Name, category.id]}, class: "sign-up-input" ) %>
+    <%= f.label :payment_category_id, "Category", class: "category-label" %>
+    <%= f.select(:payment_category_id, @categories_available.map {|category| [category.Name, category.id]}, {}, { class: "category-select-input"} ) %>
   </div>
 
   <div class="create-inventory-button-container">
