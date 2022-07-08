@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -67,7 +65,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 
   # Add rubocop for ruby style linting
-  gem 'rubocop', '>= 1.0', '< 2.0'
+  gem 'rubocop'
 
   # Add Should mathcers gem to help with model testing
   gem 'shoulda-matchers', '~> 3.1'
