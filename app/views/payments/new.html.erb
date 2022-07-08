@@ -10,7 +10,8 @@
   </div>
 
   <div class="sign-up-field">
-    <%= f.select(:category_id, @categories_available.map {|category| [category.Name, category.id]}, class: "sign-up-input" ) %>
+    <%= f.label :category_id, "Category", class: "category-label" %>
+    <%= f.select(:category_id, @categories_available.map {|category| [category.Name, category.id]}, {}, { class: "category-select-input"} ) %>
   </div>
 
   <div class="create-inventory-button-container">

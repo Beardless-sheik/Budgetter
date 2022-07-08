@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
-  def index; end
-
-  def new
-    @categories_available = Categories.all
+  def index
+    @categories = Category.all
   end
+
+  def new; end
 end
