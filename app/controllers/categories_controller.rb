@@ -1,8 +1,9 @@
-class CategoriesController < ApplicationController
-  def index
-  end
+# frozen_string_literal: true
 
-  def new 
+class CategoriesController < ApplicationController
+  def index; end
+
+  def new
     @categories_available = Categories.all
   end
 end
