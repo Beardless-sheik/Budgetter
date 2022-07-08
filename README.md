@@ -2,12 +2,14 @@
 
 The Budgetter app keeps track of all your finances per category the user creates. It will allow you to save your payments history and keep track of what you have spent in total!
 
+![App screenshot](/public/budget%20app%20screenshot.png)
+
 # Built With
  - Ruby on Rails
  - Bootstrap 5
 
 # Live Demo
-  - [Budgetter Live Demo]()
+  - [Budgetter Live Demo](https://sleepy-cove-90383.herokuapp.com/)
 
 # Additional Tools
   1. Rubocop
