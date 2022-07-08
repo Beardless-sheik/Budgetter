@@ -1,6 +1,5 @@
 class CategoriesController < ApplicationController
-
-  before_action :authenticate_user!, :except => [:splash]
+  before_action :authenticate_user!, except: [:splash]
 
   def index
     @header_description = 'CATEGORIES'
@@ -19,9 +18,8 @@ class CategoriesController < ApplicationController
       render :new, alert: 'Error occurred, please try again. Category not saved'
     end
   end
-  
-  def splash
-  end
+
+  def splash; end
 
   private
 
