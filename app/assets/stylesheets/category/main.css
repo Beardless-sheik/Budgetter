@@ -1,0 +1,138 @@
+.NavBar-MainScreens {
+  background-color: #3778c2;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.mobile-menu-hamburger {
+  visibility: hidden;
+}
+
+.header-text-main-nav {
+  color: white;
+  font-size: 1.2rem;
+  margin: auto;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 200;
+  width: 60%;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.category-grid-container {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  background-color: white;
+  width: 90%;
+  margin: 15px auto 20px;
+  padding: 20px 5px;
+  border: 1px solid #e7ebf0e3;
+  border-radius: 10px;
+}
+
+.category-description-text {
+  justify-self: center;
+  align-self: center;
+}
+
+.category-amount-total {
+  justify-self: center;
+  align-self: center;
+}
+
+.category-image-logo {
+  width: 6rem;
+  height: 6rem;
+  justify-self: center;
+}
+
+.add-category-button-container {
+  margin-top: auto;
+  background-color: #5fb523;
+}
+
+.add-category-button {
+  margin: 13px auto;
+  text-align: center;
+  font-family: 'Metropolis', sans-serif;
+  border: 1px solid #e7ebf0e3;
+  border-radius: 15px;
+  background: none;
+  background-color: inherit;
+  padding: 10px;
+  display: block;
+}
+
+.add-category-button-link {
+  color: #e7ebf0e3;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.create-inventory-button-link {
+  background-color: inherit;
+  border: none;
+  color: #e7ebf0e3;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.create-inventory-button-container {
+  width: 40%;
+  margin: 40px auto 20px;
+  text-align: center;
+  border: 0.5px solid #e7ebf0e3;
+  background: none;
+  background-color: #3778c2;
+  padding: 10px;
+  border-radius: 15px;
+  display: block;
+}
+
+.category-to-payment-link {
+  outline: none;
+  text-decoration: none;
+  color: #92a7be;
+  padding: 2px 1px 0;
+}
+
+.category-to-payment-link:link {
+  color: #101416;
+}
+
+.category-to-payment-link:visited {
+  color: rgb(66, 98, 134);
+}
+
+.category-to-payment-link:active {
+  background: #cfdae6;
+  color: #cdfeaa;
+}
+
+@media only screen and (max-width: 600px) {
+  .NavBar-MainScreens {
+    background-color: #3778c2;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 60px;
+  }
+
+  .mobile-menu-hamburger {
+    visibility: visible;
+    margin: auto;
+    width: 60%;
+    height: 80%;
+  }
+}

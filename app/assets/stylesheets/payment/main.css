@@ -1,0 +1,54 @@
+.payment-grid-container {
+  display: grid;
+  background-color: white;
+  width: 90%;
+  margin: 15px auto 20px;
+  padding: 20px 5px;
+  border: 1px solid #e7ebf0e3;
+  border-radius: 10px;
+  font-family: 'Metropolis', sans-serif;
+}
+
+.payment-grid-sub-container {
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+}
+
+.payment-category-description-text {
+  margin-left: 4rem;
+  align-self: center;
+}
+
+.payment-description-text {
+  justify-self: center;
+  align-self: center;
+  font-size: 1rem;
+}
+
+.payment-amount-total {
+  justify-self: center;
+  align-self: center;
+  font-family: 'Metropolis', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.payment-image-logo {
+  width: 5rem;
+  height: 5rem;
+  justify-self: center;
+}
+
+.category-select-input {
+  padding: 2px 20px;
+  border: 1px solid #3778c2;
+  border-radius: 15px;
+  width: 60%;
+  height: 30px;
+  margin: 10px 10px;
+}
+
+.category-label {
+  margin: 15px 5px;
+  color: black;
+}
