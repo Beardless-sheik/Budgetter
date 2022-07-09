@@ -119,6 +119,12 @@
   color: #cdfeaa;
 }
 
+.splash-image-logo {
+  margin: auto;
+  width: 15rem;
+  height: 15rem;
+}
+
 @media only screen and (max-width: 600px) {
   .NavBar-MainScreens {
     background-color: #3778c2;
